@@ -52,6 +52,7 @@ input {
 
 p {
     color: red;
+    margin-top: 5px;
 }
 
 .esconde-texto {
@@ -61,3 +62,8 @@ p {
 .input-error {
    border: 2px solid red
 }
+
+.input-validado {
+    border: 2px solid rgb(102, 190, 102)
+ }
+ 

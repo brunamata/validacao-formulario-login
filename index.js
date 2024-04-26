@@ -1,23 +1,26 @@
-import validarNome from "./validations/nome-validation.js"
+import validate from "./validations/validate.js"
 
 let inputNome = document.getElementById("input-nome")
-let inputData = document.getElementById("input-data")
+let inputAno = document.getElementById("input-ano")
 let inputEmail = document.getElementById("input-email")
 let inputSenha = document.getElementById("input-senha")
 
 inputNome.onchange = (event) => {
     console.log(inputNome.value)
-    validarNome(inputNome);
+    validate("nome", inputNome);
 }
 
-inputData.onblur = (event) => {
-    console.log(inputData.value)
+inputAno.onblur = (event) => {
+    console.log(inputAno.value)
+    validate("ano", inputAno);
 }
 
 inputEmail.onchange = (event) => {
     console.log(inputEmail.value)
+    validate("email", inputEmail);
 }
 
 inputSenha.onchange = (event) => {
     console.log(inputSenha.value)
+    validate("senha", inputSenha);
 }
