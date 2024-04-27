@@ -1,3 +1,3 @@
 Link para o servidor deployado:
 
-[Clique Aqui](validacao-cadastro-gamma.vercel.app)
+https://validacao-cadastro-gamma.vercel.app
