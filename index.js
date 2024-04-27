@@ -4,23 +4,39 @@ let inputNome = document.getElementById("input-nome")
 let inputAno = document.getElementById("input-ano")
 let inputEmail = document.getElementById("input-email")
 let inputSenha = document.getElementById("input-senha")
+let botaoEnviar = document.getElementById("submit-button")
 
 inputNome.onchange = (event) => {
-    console.log(inputNome.value)
     validate("nome", inputNome);
 }
 
 inputAno.onblur = (event) => {
-    console.log(inputAno.value)
     validate("ano", inputAno);
 }
 
 inputEmail.onchange = (event) => {
-    console.log(inputEmail.value)
     validate("email", inputEmail);
 }
 
 inputSenha.onchange = (event) => {
-    console.log(inputSenha.value)
     validate("senha", inputSenha);
 }
+
+botaoEnviar.addEventListener("click", (event) => {
+
+    const allInputs = ["nome", "ano", "email", "senha"]
+
+    for(let idx in allInputs) {
+
+        let tipo = allInputs[idx]
+
+        if(!validate(tipo, document.getElementById("input-"+tipo))){
+            event.preventDefault();
+            alert("Por favor, preencha todos os campos corretamente.");
+            return;
+        }
+    }
+
+    alert("Cadastro efetuado com sucesso! :)");
+
+});

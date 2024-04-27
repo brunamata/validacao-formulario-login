@@ -19,17 +19,20 @@
             <form>
                 <label>Primeiro Nome</label>
                 <input id="input-nome" type="text"/>
-                <p id="text-error-nome" class="esconde-texto">Campo Inválido</p>
+                <p id="text-error-nome" class="esconde-texto">Nome Inválido. Deve ser maior que 6 caracteres e sem números.</p>
                 <label>Ano de Nascimento</label>
                 <input id="input-ano" type="number"/>
-                <p id="text-error-ano" class="esconde-texto">Campo Inválido</p>
+                <p id="text-error-ano" class="esconde-texto">Ano Inválido. Deve ser entre 1900 e 2000.</p>
                 <label>Email</label>
                 <input id="input-email" type="email"/>
-                <p id="text-error-email" class="esconde-texto">Campo Inválido</p>
+                <p id="text-error-email" class="esconde-texto">Email Inválido.</p>
                 <label>Senha</label>
                 <input id="input-senha" type="password"/>
-                <p id="text-error-senha" class="esconde-texto">Campo Inválido</p>
-                <input class="submit-button" type="submit">
+                <p id="text-error-senha" class="esconde-texto">Senha Inválida.</p>
+                <p id="classificacao-senha-fraca" class="esconde-texto">Senha Fraca</p>
+                <p id="classificacao-senha-moderada" class="esconde-texto">Senha Moderada</p>
+                <p id="classificacao-senha-forte" class="esconde-texto">Senha Forte</p>
+                <input id="submit-button" type="submit">
             </form>
         </div>
     </main>

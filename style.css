@@ -16,7 +16,7 @@ h1 {
     align-items: center;
     border: solid rgb(57, 160, 230) 3px;
     border-radius: 20px;
-    margin: 0 auto;
+    margin: 30px auto;
 }
 
 form {
@@ -36,7 +36,7 @@ input {
     height: 35px;
 }
 
-.submit-button {
+#submit-button {
     margin: 40px 0;
     width: 50%;
     align-self: center;
@@ -45,7 +45,7 @@ input {
     border-radius: 5px;
 }
 
-.submit-button:hover {
+#submit-button:hover {
     background-color: rgb(41, 124, 179);
     cursor: pointer;
 }
@@ -53,6 +53,11 @@ input {
 p {
     color: red;
     margin-top: 5px;
+    font-size: 14px;
+}
+
+[id^="classificacao-senha"] {
+    color: rgb(102, 190, 102);
 }
 
 .esconde-texto {
